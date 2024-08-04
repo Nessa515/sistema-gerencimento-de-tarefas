@@ -3,10 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de gerencimento de tarefas</title>
+    <title>Gerenciador de tarefas</title>
     <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <h1>Gerenciador de tarefas</h1>
+    </header>
+    <form>
+        <div class="linha">
+            <label for="tarefa">Tarefa:</label>
+            <input type="text" id="tarefa">
+        </div>
+        <div class="linha">
+            <label for="data">Data de conclusão:</label>
+            <input type="date" id="data">
+        </div>
+        <div class="botao">
+            <input type="submit" value="Adicionar" id="btnAddLivro"/>
+        </div>
+    </form>
+
+    <div id="mensagem" class="mensagem">Mensagem</div>
+
+    <div id="conteudoTabela"></div>
+
+    <script src="livraria.js"></script>
 </body>
 </html>
