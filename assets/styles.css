@@ -60,7 +60,29 @@ form{
 }
 
 .tabela{
-    border: 1px;
+    margin-top: 50px;
+    width: 60%;
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+
+.tabela td, .tabela th{
+    padding: 16px;
+    border: 1px black solid;
+    text-align: center;
+}
+
+.tabela th{
+    color: white;
+    background-color: rgb(94, 122, 248);
+}
+
+.tabela tr:nth-child(odd){
+    background-color: lightgray;
+}
+
+.tabela tr:hover{
+    background-color: rgb(241, 241, 190);
 }
 
 .mensagem{
