@@ -48,12 +48,15 @@ function renderizarTabela(){
         <tr>
             <th>Tarefa</th>
             <th>Data de conclusão</th>
-            <th>Ação</th>
+            <th>Editar</th>
+            <th>Excluir</th>
         </tr>
         ${listaTarefas.map(tarefa =>
             `<tr>
                 <td>${tarefa.nomeTarefa}</td>
                 <td>${tarefa.data}</td>
+                <td></td>
+                <td></td>
             <tr/>
             `
         ).join('')}
